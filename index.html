@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="musicToggle">
+        <span class="music-icon">🎵</span>
+    </button>
+
+    <!-- Page 1: Landing Page -->
+    <section class="page active" id="page1">
+        <div class="content-center">
+            <h1 class="main-title fade-in">Hey… I have something<br>important to ask you 💌</h1>
+            <button class="btn-primary pulse" id="continueBtn">Continue →</button>
+        </div>
+    </section>
+
+    <!-- Page 2: Story Page -->
+    <section class="page" id="page2">
+        <div class="split-layout">
+            <div class="left-side">
+                <div class="decorative-hearts"></div>
+            </div>
+            <div class="right-side">
+                <div class="story-lines">
+                    <p class="story-line" data-delay="0">From random conversations…</p>
+                    <p class="story-line" data-delay="1">To unexpected smiles…</p>
+                    <p class="story-line" data-delay="2">To moments that felt like magic…</p>
+                    <p class="story-line" data-delay="3">You somehow became my favorite person.</p>
+                </div>
+                <button class="btn-secondary" id="nextBtn1">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Memory Cards -->
+    <section class="page" id="page3">
+        <div class="content-center">
+            <h2 class="section-title">Before I ask…</h2>
+            <div class="cards-container">
+                <div class="memory-card" data-index="0">
+                    <div class="card-front">
+                        <div class="card-icon">✨</div>
+                        <h3>Things I Adore</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Your laugh, your kindness, the way you make every day brighter just by being you.</p>
+                    </div>
+                </div>
+                <div class="memory-card" data-index="1">
+                    <div class="card-front">
+                        <div class="card-icon">💫</div>
+                        <h3>Moments I'll Never Forget</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Every conversation, every shared silence, every time you made me smile without even trying.</p>
+                    </div>
+                </div>
+                <div class="memory-card" data-index="2">
+                    <div class="card-front">
+                        <div class="card-icon">💖</div>
+                        <h3>Why You're Special</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>You're genuine, beautiful inside and out, and make the world feel like a better place.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-secondary" id="nextBtn2">Continue →</button>
+        </div>
+    </section>
+
+    <!-- Page 4: The Question -->
+    <section class="page" id="page4">
+        <div class="content-center">
+            <h1 class="big-question heartbeat">My Budia will you be my<br>Valentine?</h1>
+            <div class="date-tag">February 14, 2026 💘</div>
+            <div class="button-group">
+                <button class="btn-yes" id="yesBtn">💕 YES</button>
+                <button class="btn-no" id="noBtn">😅 NO</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: YES Celebration -->
+    <section class="page" id="page5">
+        <div class="confetti-container" id="confettiContainer"></div>
+        <div class="content-center">
+            <h1 class="celebration-title">YAY!! 💖</h1>
+            <p class="celebration-text">You just made me the<br>happiest person ever!</p>
+            <div class="celebration-gif">
+                <div class="animated-heart">❤️</div>
+            </div>
+            <p class="screenshot-hint">See you at work 😉</p>
+        </div>
+    </section>
+
+    <!-- Page 6: NO Page (Playful) -->
+    <section class="page" id="page6">
+        <div class="content-center">
+            <h1 class="sad-title">Are you sure? 😭</h1>
+            <p class="sad-text">Please think again…</p>
+            <button class="btn-secondary" id="rethinkBtn">Okay… think again</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
